@@ -69,7 +69,7 @@ h3 {
 
 .right_form {
     width: 60%;
-    height: 107vh;
+    height: 106vh;
 
     margin: 0;
     background-color: #de9f8ac2;
@@ -172,4 +172,26 @@ label {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     color: #2c3e50;
+}
+
+input:focus {
+    outline: none;
+}
+
+input+span {
+    position: relative;
+}
+
+input+span::before {
+    position: absolute;
+    right: -20px;
+    top: 5px;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 2px solid green;
 }
