@@ -195,3 +195,12 @@ input:invalid {
 input:valid {
     border: 2px solid green;
 }
+
+input.invalid {
+    border: 2px solid red;
+}
+
+span {
+    font-size: 10px;
+    color: red;
+}
